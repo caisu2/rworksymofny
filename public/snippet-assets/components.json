@@ -1,0 +1,31 @@
+{
+    "data": {
+        "prototypes": [
+            {
+                "id": 1,
+                "name": "Login",
+                "page":"/prototype/login"
+            },
+            {
+                "id": 2,
+                "name": "Reset Password Screen",
+                "page":"/prototype/reset-password"
+            },
+            {
+                "id": 3,
+                "name": "Forgot Password Screen",
+                "page":"/prototype/forgot-password"
+            },
+            {
+                "id": 4,
+                "name": "Email Sent",
+                "page":"/prototype/email-sent"
+            },
+            {
+                "id": 5,
+                "name": "Password Reset Success",
+                "page":"/prototype/password-reset"
+            }
+        ]
+    }
+}

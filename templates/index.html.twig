@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Requester{% endblock %}
+
+{% block body %}
+    <div class="ew-content-wrap">
+        <div class="tab-pane active"
+            id="div-workers-directory"
+            role="tabpanel"
+            aria-labelledby="tab1">
+            <div class="row pl-3 pr-3">
+                <div class="col-md-12 pt-3 pb-3 bg-rst-light-blue">
+                &nbsp;
+                </div>
+                    <div class="col-md-12">
+                        <form method="POST" id="requester-form">
+                            <div class="col-md-12">
+                                <div class="col-md-6 pl-0 pt-3 pr-0 ">
+                                    <button type="button" class="button--secondary worker_add_edit" data-toggle="modal" data-target="#addModal">
+                                        <i class="icon icon-personal-info"></i>Add New 
+                                    </button>
+                                    <button class="button--secondary requester_save">
+                                        <i class="fa fa-check"></i>Save Changes
+                                    </button>
+                                </div>
+                                <div class="col-md-6 pl-0 pr-0  float-right" style="display: flex; justify-content: flex-end; margin-top: -33px">
+                                    <button type="button" class="button--secondary worker_batch_upload">
+                                        <i class="fa fa-upload"></i>Batch-upload Requester
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="col-md-12 div-list"></div>
+                            <div class="col-md-6 pl-0 pt-3 pr-0">
+                                <button type="button" class="button--secondary worker_add_edit" data-toggle="modal" data-target="#addModal">
+                                    <i class="icon icon-personal-info"></i>Add New 
+                                </button>
+                                <button class="button--secondary requester_save">
+                                    <i class="fa fa-check"></i>Save Changes
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                <div class="col-md-12 div-loader" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="div-global-modal"></div>
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addModal">Add Requester</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form>
+                    <div class="modal-body">
+                        {{ include('add_request_from.html.twig') }}
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Add Requester</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script src="/Requester/js/requester.js"></script>
+    <script type="text/javascript">
+        // initialize...
+        var requester = new Requester();
+        requester.base_url = "{{ path('index') }}";
+    </script>
+{% endblock %}

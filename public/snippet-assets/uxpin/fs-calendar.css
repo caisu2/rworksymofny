@@ -1,0 +1,774 @@
+/*- Bug100507 -*/
+
+.chosen-container{
+	max-width: 100% !important;
+}
+.chosen-container-multi .chosen-choices li{
+	max-width: 90% !important;
+}
+
+.box.box-solid select[multiple], 
+.box.box-solid select[size]{
+	width: 100%;
+} 
+
+
+#divSelMonthYear{
+	background: #fff;  
+    	padding: 8px;
+    	margin-top: -25px;
+    	margin-bottom: -25px;
+    	z-index: 2;
+    	position: relative;
+    	border: 1px solid hsl(0, 0%, 87%);
+		border-radius: 3px;
+		float: left;
+		appearance: none;
+		width: 240px;
+}
+
+#divSelMonthYear select {
+	margin: 0;
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid #dedede;
+	background: #f4f4f4;
+	appearance: none;
+	background: url(https://snippets.dwebsite.com/images/caret-gray.svg) no-repeat center right;
+}
+
+#divSelMonthYear select#selMonth{
+	width: calc(50% - 4px);
+	float: left;
+	margin-right: 4px;
+}
+#divSelMonthYear select#selYear{
+	width: calc(30% - 4px);
+	float: left;
+	margin-right: 4px;
+}
+
+.calendarLeftSection table td:nth-child(3){
+	min-width: 170px;
+}
+
+#divSelMonthYear input[type="button"] {
+    width: 20%;
+    padding: 5px;
+    border: none;
+	background: #125789;
+	float: left;
+	height: 31px;
+}
+
+#prevNextMonthContent table tr td i.fa,
+#prevNextWeekContent table tr td i.fa,
+#prevNextDayContent table tr td i.fa{
+	margin: -2px 5px 0;
+}
+
+.title-month{
+	font-size: 16px !important;
+}
+/*
+.div-responsive .box .box-body.no-padding .col-md-2{
+	display: none;
+}
+*/
+.div-responsive .box .box-body.no-padding .col-md-5:first-child{
+	width: 58.33333333%;
+}
+.div-responsive .box .box-body.no-padding #divMonthCalendar .col-md-5:first-child{
+	width: 41.66666666%;
+}
+#divSchedule{
+	margin-top: -5px;
+	margin-bottom: 5px;
+}
+
+#divMonthCalendar #startTimeContent .col-md-4{
+	width: 50%;
+}
+
+select, input{
+	appearance: none !important;
+}
+
+#divSelWeek select,
+#divSelDay input{
+	padding: 8px;
+	border: 1px solid #dedede;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+#divSelWeek select{
+	background: url(https://snippets.dwebsite.com/images/caret-gray.svg) no-repeat center right;
+}
+
+input#setDefaultStartTime,
+select#selectedStartHour,
+select#selectedTopListView,
+select#selectedBottomListView,
+.box-body .checkbox input,
+.box-body .checkbox .radio input{
+	appearance: auto !important;
+}
+
+.calendarLeftSetion .table-padding>tbody>tr>td{
+	position: relative;
+}
+
+.div-request-button {
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+.div-request-button button{
+	padding: 8px 20px;
+}
+
+.btn-primary.focus, .btn-primary:focus{
+	background: #286090 !important;
+	color: #fff !important;
+}
+.btn.btn-primary{
+	height: 36px;
+}
+
+.btn{
+	height: 36px;
+}
+
+
+.calendarLeftSetion .table-padding>tbody>tr>td:first-child{
+	width: 80px;
+}
+.calendarLeftSetion .table-padding>tbody>tr>td:first-child button{
+	width: 100%;
+}
+
+.calendarLeftSetion .table-padding>tbody>tr>td:last-child{
+	width: 160px;
+}
+.calendarLeftSetion .table-padding>tbody>tr>td:last-child button{
+	width: 140px;
+}
+.calendarLeftSetion .table-padding>tbody>tr>td:nth-child(2),
+.calendarLeftSetion .table-padding>tbody>tr>td:nth-child(4){
+	width: 20px;
+}
+.calendarLeftSetion .table-padding>tbody>tr>td:nth-child(3){
+	width: calc(100% - 280px);
+}
+
+.calendarLeftSetion .table-padding>tbody>tr>td:last-child{
+	width: 160px;
+}
+
+#btnWeekOk{
+	height: 36px;
+    width: 36px;
+    border: none;
+}
+
+button#redirectLogin{
+	min-width: 160px;
+}
+
+button#stopLoading{
+	height: 36px;
+    border: none;
+    padding: 0 15px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.display-none{display: none !important;}
+
+#divSchedule button{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@media (max-width: 1440px) {
+	.breadcrumb{
+		padding: 2px 0px 0px !important;
+		text-align: right;
+	}
+	.calendarRightSetion{
+		margin-top: 4px;
+	}
+}
+
+@media (max-width: 1024px){
+	div.content-wrapper{
+		padding-top: 0;
+	}
+	.breadcrumb-secton{
+		width: 100%; 
+		float: left; 
+		text-align: left;
+	}
+	.calendarRightSetion{
+		margin-top: -20px;
+	}
+	.breadcrumb{
+		padding: 2px 0px 0px !important;
+		text-align: right;
+	}
+	#sidebarCollapse{
+		padding: 20px 0 20px 12px;
+		display: inline-block;
+	}
+	.calendarRightSetion{
+		margin: 4px auto 0 !important;
+		float: right !important;
+		width: auto !important;
+	}
+
+	.box-body .col-md-5{
+		width: 41.66666667%; 
+		float: left;
+	}
+	.box-body .col-md-2{
+		width: 16.66666667%; 
+		float: left;
+	}
+
+	.tooltip{
+		transform: translate(0,-8px);
+		-moz-transform: translate(0,-8px);
+		-webkit-transform: translate(0,-8px);
+		background: none !important;
+	}
+	.tooltip .tooltip-inner{
+		padding: 5px 10px;
+		background: #125789 !important;
+	}
+
+	.content-header .col-md-7{
+		width: 58.33333333%;
+	}
+	.content-header .col-md-5{
+		width: 41.66666667%;
+	}
+
+	#calendarContent .no-padding#testdiv{
+		min-width: 1000px;
+	}
+
+	#calendarContent{
+		overflow-x: auto;
+	}
+	#sidebar + .div-responsive#content{
+		min-width: 900px; 
+	}
+}
+
+@media (max-width: 991px){
+	.breadcrumb{
+		text-align: left;
+		padding: 10px 0px 0px !important;
+	}
+	
+	#sidebar + .div-responsive#content{
+		min-width: 640px; 
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 823px){
+	#divSelMonthYear{
+		margin-left: calc((100% - 240px) / 2);
+	}
+
+}
+
+@media (max-width: 823px){
+	.breadcrumb{
+		padding: 10px 0px 0px !important;
+		text-align: left;
+		width: 100%;
+	}
+	#sidebarCollapse{
+		padding-left: 12px;
+	}
+	.calendarRightSetion{
+		margin: 4px auto 0 !important;
+		float: right !important;
+		width: auto !important;
+	}
+
+	.box-body .col-md-5{
+		width: 41.66666667%; 
+		float: left;
+	}
+	.box-body .col-md-2{
+		width: 16.66666667%; 
+		float: left;
+	}
+
+	.calendarMonthTable{
+		margin-bottom: 20px;
+	}
+
+	.calendarRightSetion{
+		margin: -6px auto 0 !important;
+		float: none !important;
+		width: 300px !important;
+	}
+	.box-body .col-md-5{
+		width: 100%; 
+		float: left;
+	}
+	.box-body .col-md-2{
+		width: 100%; 
+		float: left;
+	}
+	table.table-padding{
+		width: 100%;
+	}
+	
+	#divCalendarLoader{
+		top: 60px !important;
+		left: 50% !important;
+		transform: translateX(-50%) !important;
+		-moz-transform: translateX(-50%) !important;
+		-webkit-transform: translateX(-50%) !important;
+	}
+
+	#divMonthCalendar #calendarContent{
+		margin-bottom: 15px;
+	}
+
+	a.guide label{
+		font-size: 14px;
+	}
+
+	.content-header .col-md-7{
+		width: 58.33333333%;
+	}
+	.content-header .col-md-5{
+		width: 41.66666667%;
+	}
+
+	/*
+	#content .box-body.no-padding .row .col-md-2{
+		display: none;
+	}*/
+
+	.div-responsive .box .box-body.no-padding .col-md-5:first-child{
+		width: 100%;
+	}
+
+	.div-responsive#content table#btn-options tr td button{
+		width: 100%;
+	}
+
+	#slider.ui-widget.ui-widget-content{
+		margin: 15px 0 0 0;
+	}
+	#divMonthCalendar #startTimeContent .col-md-4{
+		width: 60%;
+	}
+	#divMonthCalendar #startTimeContent .col-sm-6{
+		width: 40%;
+	}
+	#slider.ui-widget.ui-widget-content{
+		margin: 4px 0 0 0;
+	}
+
+	#sidebar + .div-responsive#content{
+		overflow-x: hidden !important;
+		max-width: 100%;
+	}
+
+	
+	.div-request-button{
+		right: 26px;
+	}
+
+	
+	.calendarLeftSetion .table-padding>tbody>tr>td{
+		display: block;
+		float: left;
+	}
+	.calendarLeftSetion .table-padding>tbody>tr>td:nth-child(3){
+		width: calc(100% - 280px);
+	}
+	#divSelMonthYear{
+		margin-top: -12px;
+	}
+	#divDateTitle{
+		padding-top: 8px;
+	}
+	#divSelMonthYear{
+		margin-top: -6px;
+	}
+	
+}
+
+@media only screen and (max-width:812px){
+	
+	.div-request-button{
+		right: 26px;
+	}
+	.calendarLeftSetion .table-padding>tbody>tr>td:nth-child(1) button{
+		margin-left: 10px;
+	}
+	#btnViewRequests{width: 100%;}
+	.div-responsive .box .box-body.no-padding #divMonthCalendar .col-md-5:first-child{
+		width: 50%;
+	}
+	.div-responsive .box .box-body.no-padding #divMonthCalendar .col-md-2{
+		width: 25%;
+	}
+	.div-responsive .box .box-body.no-padding #divMonthCalendar .col-md-5:last-child{
+		width: 25%;
+	}
+}
+
+@media only screen and (max-width:768px){
+
+	.calendarMonthTable td{
+		max-width: 46px;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	td.monthCalendarColor{
+		text-overflow: ellipsis;
+		padding: 5px;
+	}
+
+	#sidebarCollapse{
+		padding: 20px 0;
+		display: inline-block;
+	}
+
+	table.table-padding{
+		width: 100%;
+	}
+
+	table#btn-options{
+		width: 100%;
+	}
+
+	table#btn-options tbody tr td{
+		width: 25%;
+	}
+
+	table#btn-options tbody tr td button{
+		width: 100%;
+	}
+
+	table#table-ListCalendar tbody tr td{
+		height: auto !important;
+	}	
+	
+	#slider.ui-widget.ui-widget-content{
+		margin: 0;
+	}
+
+	.btn-group-xs>.btn, .btn-xs{
+		padding: 8px 20px;
+	}
+
+	.content-header{
+		padding-top: 0 !important;
+	}
+/*
+	#content .box-body.no-padding .row .col-md-2{
+		display: none;
+	}*/
+	.breadcrumb{
+		padding: 10px 0px 0px !important;
+		text-align: left;
+	}
+	.calendarRightSetion{
+		margin: -6px auto 0 !important;
+		float: none !important;
+		width: 300px !important;
+	}
+	.box-body .col-md-5{
+		width: 100%; 
+		float: left;
+	}
+	.box-body .col-md-2{
+		width: 100%; 
+		float: left;
+	}
+	
+	#divSelMonthYear{
+		margin-left: calc((100% - 240px) / 2);
+	}
+
+	.content-header .col-md-7{
+		width: 100%;
+	}
+	.content-header .col-md-5{
+		width: 100%;
+	}
+	.breadcrumb{
+		text-align: left;
+	}
+	.div-request-button{
+		top: 8px;
+		right: 20px;
+		width: 140px;
+	}
+	.btn-group-xs>.btn, .btn-xs{
+		padding: 0;
+	}
+
+}
+
+@media screen and (max-width: 767px){
+	#slider.ui-widget.ui-widget-content{
+		margin: 30px 0 20px;
+	}
+	
+	#divMonthCalendar #startTimeContent .col-md-4{
+		width: 100%;
+	}
+
+	#slider.ui-widget.ui-widget-content {
+		margin: 30px 0 20px;
+	}
+	#slider.ui-widget.ui-widget-content{
+		margin: 40px 0 20px 0;
+	}
+	#divMonthCalendar #startTimeContent .col-md-4{
+		width: 100%;
+	}
+	#divMonthCalendar #startTimeContent .col-sm-6{
+		width: 100%;
+	}
+}
+
+/*MOBILE PORTRAIT*/
+@media screen and (max-width: 720px){
+	div.content-wrapper {
+		padding-top: 15px !important;
+	}
+	.breadcrumb {
+		padding: 10px 0px 0px !important;
+		text-align: left;
+	}
+	#divSelMonthYear{
+		margin-left: calc((100% - 240px) / 2);
+	}
+	
+	#divMonthCalendar #startTimeContent .col-md-4{
+		width: 100%;
+	}
+	#sidebar + .div-responsive#content{
+		min-width: 500px;
+	}
+	
+}
+
+@media screen and (max-width: 640px){
+	#divCalendarLoader{
+		top: 100px !important;
+		left: 50% !important;
+	}
+
+	.start-time,
+	.start-default{
+		width: 100% !important;
+		text-align: center;
+	}
+
+	#slider.ui-widget.ui-widget-content {
+		margin: 60px 0 20px;
+	}
+	
+}
+
+@media screen and (min-width: 568px){
+	#sidebar.active + .div-responsive#content{
+		width: 100%;
+	}
+	#sidebar + .div-responsive#content{
+		width: calc(100% - 260px);
+	}
+	.div-responsive#content table#btn-options{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.calendarLeftSetion .table-padding>tbody>tr>td:nth-child(1) button{
+		margin-left: 0;
+	}
+	
+}
+
+@media screen and (max-width: 567px){
+	#sidebar + .div-responsive#content{
+		min-width: 308px;
+	}
+	.div-responsive .box .box-body.no-padding .col-md-5:first-child{
+		padding-right: 0;
+	}
+	.div-request-button {
+		top: auto;
+		right: auto;
+		left: 50%;
+		position: relative;
+		margin-bottom: 15px;
+		transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+	}
+	.calendarLeftSetion .table-padding>tbody>tr>td:nth-child(1) button{
+		margin-left: 0;
+	}
+	
+	.calendarLeftSetion .table-padding>tbody>tr>td:last-child{
+		width: 100%;
+		text-align: center;
+	}
+	.calendarLeftSetion .table-padding>tbody>tr>td:last-child button#btnViewRequests{
+		display: inline-block;
+		float: none;
+		width: 140px;
+	}
+	.calendarLeftSetion .table-padding>tbody>tr>td:nth-child(3) {
+		width: calc(100% - 140px);
+	}
+	.calendarLeftSetion .table-padding{
+		min-width: 300px;
+	}
+	.div-responsive .box .box-body.no-padding #divMonthCalendar .col-md-5:first-child,
+	.div-responsive .box .box-body.no-padding #divMonthCalendar .col-md-5:last-child
+	{
+		width: 100%;
+	}
+	.div-responsive .box .box-body.no-padding #divMonthCalendar .col-md-2{
+		width: 100%;
+	}
+	.div-responsive .box .box-body.no-padding #divMonthCalendar .col-md-5:last-child .pull-right{
+		width: 100%;
+		padding-left: 15px;
+	}
+}
+
+@media screen and (max-width: 375px){
+	#divSelMonthYear{
+		width: 223px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	#divSelMonthYear select{
+		height: 31px;
+	}
+
+	.div-responsive .box .box-body.no-padding #divMonthCalendar .col-md-2{
+		width: 100%;
+		padding-right: 0;
+	}
+	#divSchedule{
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+
+}
+@media screen and (max-width: 359px){
+	.calendarMonthTable td{max-width: 41px;}
+	#divSelMonthYear{
+		width: 213px;
+		margin-left: -21px;
+		margin-right: -35px;
+	}
+	#divSelMonthYear select{
+		height: 31px;
+	}
+}
+
+
+/*
+ * Bug: 106195  
+ * auther: Jayson
+ * on: 02/02/2021
+ * changes: apply sidebard adjustment for responsive 
+ */
+
+/*---- Start -----*/
+
+@media  (max-width:823px) { 
+	nav#sidebar {
+		position: absolute;
+        z-index: 200;
+        background: #d9edf7;
+	   width: 100%; }
+
+	   #sidebar + .div-responsive#content {
+		overflow-x: hidden !important;
+		width: 100% !important;
+	}
+
+	
+	   
+}
+
+/*BUG 109772*/
+#calendarContent #div{
+	position: relative;
+}
+#calendarContent #div:hover .divToolTipData{
+	display: block !important;
+}
+
+.div-data{
+	position: relative;
+}
+
+
+
+.divToolTipData{
+	position: absolute;
+	top: 0;
+	left: 98%;
+	background: #125789;
+	color: #fff;
+	padding: 10px 50px 10px 10px;
+	overflow: hidden;
+	z-index: 3;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	width: 220px;
+}
+td:last-child .divToolTipData{
+	left: -220px;
+}
+.divToolTipData .tooltip-bt{
+	width: 30px;
+	height: 30px;
+	background: rgba(0,0,0,0.3);
+	border: none;
+	color: #fff;
+	font-size: 18px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.div-data:hover .divToolTipData{
+  display: block !important;
+  box-shadow: 0 3px 9px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0 3px 9px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,0.2);
+}
+
+
+
+
+/*---  End -------*/

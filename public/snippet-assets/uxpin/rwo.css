@@ -1,0 +1,29 @@
+.content-wrapper .form label span{
+    position: absolute;
+    transform: translateY(4px);
+    -moz-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+}
+
+a.delete_workorder_workers,
+a.override_delete_icon {
+    padding-top: 4px;
+    display: inline-block;
+}
+.content-wrapper .form #div_workorder_inventories .check-fieldset-wrapper label,
+.content-wrapper .form #div_workorder_notifications .check-fieldset-wrapper label{
+    transform: translateY(-5px);
+}
+input[type=checkbox], input[type=radio][type="checkbox"]{
+    transform: translateY(2px);
+}
+.content-wrapper .form .check-fieldset-wrapper{
+    margin-top: 10px;
+}
+.dwc.btn-primary:hover{
+    background: #337ab7;
+}
+
+.content-wrapper .form .new-work-order .new-work-order-main-tbl td:first-of-type{
+    padding-top: 4px;
+}

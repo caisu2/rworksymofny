@@ -1,0 +1,52 @@
+<div class="col-md-12 pl-0 pr-0 pt-3 pb-3 div-directory-content">
+    <table class="table table-single-col table-striped center" id="tbl-directory-worker">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th class="th-title-black">Active</th>
+                <th class="th-title-black">Cellphone No.</th>
+                <th class="th-title-black">Office</th>
+                <th class="th-title-black">Delete</th>
+                <th class="th-title-black">Deny</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for requester in requesters %}
+                <tr >
+                    <td>
+                        <span> <a href="javascript:void(0);" {{ (requester.active == 0 or requester.is_approve != 1) ? 'style="color: black !important"' : '' }}  class="worker_add_edit" data-id="{" style="margin-bottom: -7px;">{{ requester.last_name }}, {{ requester.first_name }}</a></span> 
+                        {% if requester.active == 0 and requester.is_approve != 1 %}
+                            <span style="color: red"> (New Requester) </span>
+                        {% endif %}
+                        
+                    </td>
+                    <td>
+                        <div class="form-check">
+                            <input type="hidden" name="requester[{{requester.id}}][id]" value="{{requester.id}}" />
+                            <input class="form-check-input inactive_ids" data-id="{{requester.id}}" {{ (requester.active == 1 or requester.is_approve == 1) ? 'checked' : '' }} type="radio" name="requester[{{requester.id}}][active]" value="1" id="active_{{requester.id}}">
+                            <label class="form-check-label mr-5" for="active_{{requester.id}}">
+                                Yes
+                            </label>
+                            <input class="form-check-input inactive_ids" data-id="{{requester.id}}" {{ (requester.active == 0 or requester.is_approve != 1) ? 'checked' : '' }} type="radio" name="requester[{{requester.id}}][active]" value="0" id="inactive_{{requester.id}}">
+                            <label class="form-check-label" for="inactive_{{requester.id}}">
+                                No
+                            </label>
+                        </div>
+                    </td>
+                    <td>{{ requester.req_cellphone }}</td>
+                    <td>{{ requester.req_officephone }} {{ requester.req_officephone_ext ? 'Ext. {{req_officephone_ext}}' : '' }}</td>
+                    <td>
+                        <a href="javascript:void(0);" class="uxpin icon icon-delete btn--delete requester-delete" data-id="{{ requester.id }}"></a>
+                    </td>
+                    <td>
+                    {% if (requester.active == 0 and requester.is_approve != 1) %}
+                        <a style="color: gray !important; font-size: 18px" href="javascript:void(0);" class="btn--delete requester-deny" data-id = "{{ requester.id }}" >
+                            <i class="fa fa-times-circle-o" aria-hidden="true"></i>
+                        </a>
+                    {% endif %}
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

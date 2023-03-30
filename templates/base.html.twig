@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+			<link rel="stylesheet" href="/snippet-assets/select2/select2.min.css"/>
+			<link
+			rel="stylesheet" type="text/css" href="/snippet-assets/daterangepicker/daterangepicker.css"/>
+			<!-- DROPZONE JS -->
+			<link
+			rel="stylesheet" type="text/css" href="/snippet-assets/dropzonejs/dropzone.css"/>
+			<!-- MAIN -->
+			<link rel="stylesheet" href="/snippet-assets/uxpin/main.css"/>
+			<link rel="stylesheet" href="/snippet-assets/uxpin/ev.css"/>
+			<link rel="stylesheet" href="/snippet-assets/jquery.ui/jquery-ui.css">
+			<link rel="stylesheet" href="/snippet-assets/bootstrap.taginput/bootstrap-tagsinput.css">
+			<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+			<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowgroup/1.1.2/css/rowGroup.dataTables.min.css">
+        {% endblock %}
+
+        {% block javascripts %}
+            <script src="/snippet-assets/jquery/jquery-3.4.1.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+			<!-- SELECT2 -->
+			<script src="/snippet-assets/jquery.ui/jquery-ui.js"></script>
+			<script src="/snippet-assets/select2/select2.full.min.js"></script>
+			<script type="text/javascript" src="/snippet-assets/momentjs/moment.min.js"></script>
+			<script type="text/javascript" src="/snippet-assets/daterangepicker/daterangepicker.min.js"></script>
+			<script src="/snippet-assets/dropzonejs/dropzone.js"></script>
+			<script src="/snippet-assets/uxpin/main.js"></script>
+			<script src='https://www.google.com/recaptcha/api.js'></script>
+			<script src='/snippet-assets/bootstrap.taginput/bootstrap-tagsinput.min.js'></script>
+			<script src="/snippet-assets/datatable/jquery.dataTables.min.js"></script>
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/rowgroup/1.1.2/js/dataTables.rowGroup.min.js"></script>
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}
+            <div><h1>Sample</h1></div>
+        {% endblock %}
+    </body>
+</html>
